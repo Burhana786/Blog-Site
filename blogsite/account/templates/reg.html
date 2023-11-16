@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{%block home%}
+      <h1 class="bg-info display-4 text-center text-dark">Registration</h1>
+      <form action="" method="post" class="text-center">
+        {%csrf_token%}
+        <table class="table">
+          <tr>
+            <td>{{form.as_table}}</td>
+            <td colspan="2"><button class="btn btn-success">Register</button></td>
+        </tr> 
+      </form>  
+{%endblock home%}

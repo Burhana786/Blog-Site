@@ -1,0 +1,14 @@
+{%extends 'userhome.html'%}
+{%block userhome%}
+<form action="" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    
+        <div class="row">
+            <div class="col-4"></div>
+        </div>
+    <table class="table">
+        {{form.as_table}}
+    </table>
+    <button class="btn btn-success">ADD BIO</button>
+</form>
+{%endblock userhome%}
